@@ -1,0 +1,28 @@
+{% extends "first_app/base.html" %}
+
+{% block content %}
+
+<div class="container">
+    <div class="text-center">
+    <div class="page-header">
+    <div class="header-main">
+    <div class="header">
+      {% load static %}
+      <br>
+      <div><img src="https://raw.githubusercontent.com/kaushiki7/kaushiki7.github.io/master/DPLogo.png" alt=""
+        width="150" height="150" border="0"><h1><br><b>Delhi Police</b></h1></div>
+      <h2>Project Management System<h2>
+    </div>
+    </div>
+      <div class="column">
+      <br>
+      </div>
+    </div>
+    <br>
+    {% if user.is_authenticated %}
+        <div  style="text-align: right;"><h1><b><i>Hello {{ user.username }}...</i></b></h1></div>
+    {% endif %}
+    </div>
+</div>
+
+{% endblock %}
